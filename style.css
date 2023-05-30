@@ -1,3 +1,153 @@
-p{
-  color: blue;
+body{
+  background: #ffffff;
+   margin: 0px;
+   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1, ul, a{
+  margin: 0px;
+  }
+
+  ul{
+    padding: 0px;
+   list-style: none;
+ }
+ a{
+  text-decoration: none;
+  color: #006a97;
+  img{
+    max-width: 100%;
+    display:block;
+  }
+}
+
+.header-bg{
+  background: #fbfbfb
+ }
+
+ .header{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+align-items: center;
+padding: px;
+max-width: 1200px;
+margin-left: 0px;
+margin-right: auto;
+}
+
+.header-menu{
+  display: flex;
+  gap: 40px;
+}
+
+.header-menu a {
+  color: #006a97;
+  display: inline-block;
+  padding: 16px 0px;
+  font-size: 18px;
+  position: relative;
+  }
+
+  .header-menu a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background:#b30000;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+    }
+
+  .header-menu a:hover:after {
+      width: 100%;
+      }
+
+    
+    @media (max-width:800px){
+      .header-menu{
+        gap: 20px;
+      }
+    .header-menu a{
+      background: 111111;
+      padding: 12px 16px;
+      border-radius: 4px;
+    }
+    .header-menu a:hover {
+      background: #b30000;
+    }
+    .header-menu a:after{
+      display: none;
+    }
+    }
+
+    @media (max-width:600px){
+      .header-menu{
+        gap: 12px;
+      }
+      .header-menu a {
+      padding: 8px 12px;
+      font-size: 14px;
+        }
+      }
+
+      
+.introducao-bg{
+  height: 100vh;
+background-image: url(img/produtos/REDE-DE-FIBRA-HOME.jpg);
+background-position: 0px top;
+  background-repeat: no-repeat;
+  background-size:cover ;
+ }
+
+ .introducao h1{
+  color: #31c2ff;
+  padding-top: 150px;
+  padding-left: 100px;
+    font-size: 72px;
+    line-height: 60px;
+    font-family: "Poppins";
+  font-weight: 600;
+}
+.introducao h1 span{
+  padding-left: 32px;
+ }
+
+.introducao h2{
+  color: #ffffff;
+  padding-left: 140px;
+  font-size: 32px;
+  line-height: 32px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.introducao h2 span {
+  color: #b30000;
+  font-size: 30px;
+}
+.introducao p{
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 0px 40px;
+  padding-left: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.introducao-conteudo{
+  align-self: end;
+  padding-bottom: 80px;
+ }
+  .produto h1{
+ color: #b000000;
+    padding-left: 100px;
+    font-size: 40px;
+    line-height: 40px;
+ }
+ .produto h1 span {
+  color: #b30000 ;
+ }
